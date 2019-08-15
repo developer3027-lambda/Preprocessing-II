@@ -15,7 +15,6 @@
   width: 100vw;
   height: 15vh;
   border-bottom: 1px dashed black;
-  box-sizing: border-box;
 }
 .nav-wrapper .nav {
   display: flex;
