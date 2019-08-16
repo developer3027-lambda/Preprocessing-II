@@ -1,1 +1,44 @@
 // Navigation Styles here
+//flex mixin
+.flex-mixin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.nav-wrapper {
+    .flex-mixin();
+    width: 100vw;
+    height: 15vh;
+    border-bottom: 1px dashed black;
+    // box-sizing: border-box;
+    .nav {
+        .flex-mixin();
+        justify-content: space-between;
+        padding: 20px;
+        width: 80%;
+        height: 100%;
+        .bus {
+            display: flex;
+            justify-content: start;
+            width: 20%;
+        }
+        .links {
+            display: flex;
+            justify-content: end;
+            width: 40%;
+            a {
+                font-size: 16px;
+                margin: 0 20px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+
+
